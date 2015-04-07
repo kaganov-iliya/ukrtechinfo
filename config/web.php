@@ -38,6 +38,18 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'view' => [
+            'renderers' => [
+                'tpl' => [
+                    'class' => 'yii\smarty\ViewRenderer',
+                    //'cachePath' => '@runtime/Smarty/cache',
+                ],
+            ],
+        ],
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+//            'showScriptName' => false,
+        ],
     ],
     'params' => $params,
 ];
